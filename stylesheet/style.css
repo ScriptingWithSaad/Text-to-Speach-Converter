@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+
+
+    /* font */
+        font-family: "Poppins", serif;
+        font-style: normal;
+        font-weight: 400;
+        font-weight: 500;
+      }
+
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+
+.hero h1{
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin-top: -1vw;
+    margin-bottom: 2vw;
+}
+
+.hero h1 span{
+    color: #ff2963;
+    border-bottom: .4vw solid #ff2963;
+    border-bottom-right-radius:.2vw solid #ff2963;
+    border-bottom-lefts-radius:.2vw solid #ff2963;
+}
+
+textarea{
+    width: 45vw;
+    height: 25vw;
+    font-size: 1.3vw;
+    border-radius: .6vw;
+    padding: 1vw 1.5vw;
+    background-color: #403d84;
+    color: #fff;
+    outline: none;
+    border: none;
+    resize:none;
+    margin-bottom: 2vw;
+}
+
+textarea::placeholder{
+    color: #ddd;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 45vw;
+}
+
+
+.row button{
+    background: #ff2963;
+    color: #fff;
+    border-radius: 2.4vw;
+    border: none;
+    outline: none;
+    padding: 0.7vw 2.5vw;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.row button img{
+    margin-right: .8vw;
+    width: 1.5vw;
+}
+
+
+select {
+    width: 100%;
+    color: #fff !important;
+    background-color: #403d84 !important;
+    border: none;
+    outline: none;
+    flex: 1;
+    height: 3vw;
+    border-radius: 2vw;
+    padding: 0 3vw 0 2vw;  
+    font-size: 1vw;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    background-image: url('../assets/images/dropdown.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1vw) center;
+    background-size: 1.1vw;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select option {
+    background: #403d84;
+    color: #fff;
+    padding: 10px;
+    font-size: 1vw;
+}
+
+.row {
+    position: relative;
+}
+
+
+.row::after {
+    content: "";
+    position: absolute;
+    right: calc(40px + 1vw); 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    pointer-events: none;
+    opacity: 0;
+}
